@@ -1,0 +1,325 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sitio web con informacion de los juegos mas recientes a la fecha.">
+  <meta name="keywords" content="game, gamer, juegos, jugador, valley, gamevalley">
+  <meta name="author" content="Dariel">
+  <title>Game Valley</title>
+  <link rel="icon" href="imagenes/navbaricon.png" type="image/png">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Momo+Trust+Display&display=swap" rel="stylesheet">
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icon -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-danger">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+  <div class="container-fluid">
+     <a class="navbar-brand" href="#">
+      <img src="imagenes/navbaricon.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+      GameValley
+    </a>
+    <span class="navbar-brand mb-0 h1"></span>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+         
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html#">Pagina Principal</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="enlaces.html#">Enlaces</a>
+        </li>
+          <li class="nav-item">
+          <a class="nav-link" href="contacto.html#">Contactos</a>
+        </li>
+
+          
+          <li class="nav-item"> 
+             <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#politicasModal">Politicas de Privacidad</a>
+          </li>
+          <li>
+              <button id="darkToggle" class="btn btn-light ms-3">Modo Oscuro</button>
+    
+          </li>
+         
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+
+
+
+
+
+  <!-- Header -->
+  <header class="text-center bg-danger text-dark py-4">
+    <div class="container">
+      <h1 class="display-4 fw-bold">Game Valley</h1>
+      <p class="lead">Informese rapido, Juegue rapido.</p>
+    </div>
+  </header>
+
+  <!-- Seccion principal -->
+  <main class="container my-5">
+
+    <!-- Carrusel -->
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="4000">
+      <img src="imagenes/imgcarrusel8.jpeg" class="d-block w-100" alt="Imagen de carrusel">
+    </div>
+    <div class="carousel-item" data-bs-interval="4000">
+      <img src="imagenes/imgcarrusel2.jpg" class="d-block w-100" alt="Imagen de carrusel">
+    </div>
+    <div class="carousel-item" data-bs-interval="4000">
+      <img src="imagenes/imgcarrusel3.jpg" class="d-block w-100" alt="Imagen de carrusel">
+    </div>
+      
+  </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+  <span class="visually-hidden">Anterior</span>
+</button>
+<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+  <span class="visually-hidden">Siguiente</span>
+</button>
+</div>
+
+          <h3 class="text-center text-wrap mt-4">Informese de los juegos de computadoras mas recientes de la epoca apenas se lancen</h3>
+
+    <!-- Cards -->
+
+      <h2 class="text-wrap text-center mt-4">Vea los juegos mas recientes</h2>
+
+     <div class="container my-4 px-4">
+        <div class="row g-4 justify-content-center ">
+
+            <div class="col-md-4 col-sm-6">
+                <div class="card text-center mb-2 border-danger" style="width: 18rem;">
+                <img src="imagenes/game1.jfif" class="card-img-top mt-3" alt="card1">
+                    <div class="card-body">
+                     <h5 class="card-title card-header mb-2">Elden Ring: Nightreign</h5>
+                     <p class="card-text fs-6">ELDEN RING NIGHTREIGN es una aventura independiente dentro del universo de ELDEN RING creada para ofrecer a los jugadores una nueva experiencia al reinventar el diseño central del juego.</p>
+                        <div class="card-footer mb-2">
+                            Precio = $39.99USD
+                        </div>
+                    <a href="#" class="btn btn-primary " data-bs-toggle= "modal" data-bs-target="#modalJuego1">Leer mas</a>
+                    </div>
+                </div>
+           </div>
+
+
+            <div class="col-md-4 col-sm-6">
+                <div class="card text-center mb-2 border-danger" style="width: 18rem;">
+                <img src="imagenes/game2.jpg" class="card-img-top mt-3" alt="card2">
+                    <div class="card-body">
+                        <h5 class="card-title card-header mb-2">RV There Yet?</h5>
+                        <p class="card-text fs-6">Una aventura cooperativa que consiste en conducir una autocaravana de vuelta a casa.</p>
+                            <div class="card-footer mb-2">
+                                Precio = $7.99USD
+                            </div>
+                        <a href="#" class="btn btn-primary " data-bs-toggle= "modal" data-bs-target="#modalJuego2">Leer mas</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-4 col-sm-6">
+                <div class="card text-center mb-2 border-danger" style="width: 18rem;">
+ 
+                <img src="imagenes/game3.jpg" class="card-img-top mt-3" alt="card3">
+                    <div class="card-body">
+                    <h5 class="card-title card-header mb-2">Battlefield 6</h5>
+                    <p class="card-text fs-6">La experiencia bélica definitiva. En una guerra de tanques, cazas y gigantescos arsenales de combate, el arma más mortífera es tu patrulla.</p>
+                        <div class="card-footer mb-2">
+                            Precio = $69.99USD
+                        </div>
+                        <a href="#" class="btn btn-primary " data-bs-toggle= "modal" data-bs-target="#modalJuego3">Leer mas</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+     </div>
+
+      <!-- Contenido -->
+      
+        
+
+  
+
+      <h3 class="mt-4 text-wrap">Juegos mas valorados de este año 2025 segun la critica</h3>
+      <ul>
+       <li> <a href ="https://www.expedition33.com/">Clair Obscur: Expedition 33</a></li>
+        <li><a href ="https://www.nintendo.com/es-mx/store/products/mario-kart-world-switch-2/">Mario Kart World</a></li> 
+        <li><a href ="https://store.steampowered.com/app/3017860/DOOM_The_Dark_Ages/"> Doom: The Dark Ages</a></li> 
+        <li><a href ="https://www.ubisoft.com/es-mx/game/assassins-creed/shadows">Assassin's Creed Shadows</a></li> 
+        <li><a href ="https://es.bandainamcoent.eu/elden-ring/elden-ring"> Elden Ring</a></li> 
+        <li><a href ="https://www.ea.com/games/split-fiction/split-fiction"> Split Fiction</a></li> 
+        <li><a href ="https://store.steampowered.com/app/2215430/Ghost_of_Tsushima_DIRECTORS_CUT/"> Ghost of Tsushima Director's Cut</a></li> 
+
+      </ul>
+
+      <h3 class="mt-4 text-wrap">Juegos mas vendidos ahora, segun sus ingresos</h3>
+      <ol>
+       <li> <a href ="https://arcraiders.com/es/">ARC Raiders></a></li>
+        <li><a href ="https://www.counter-strike.net/cs2?l=spanish">Counter-Strike 2</a></li>
+        <li><a href ="https://pubg.com/en">PUBG: BATTLEGROUNDS</a></li>
+        <li><a href ="https://www.ea.com/es-es/games/battlefield">Battlefield 6</a>
+        <li><a href ="https://store.steampowered.com/app/2592160/Dispatch/">Dispatch</a></li>
+      </ol>
+    
+
+    
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3 mt-5">
+    <p class="mb-1">&copy; 2025 GameValley | <a href="#" class="text-white text-decoration-underline" data-bs-toggle="modal" data-bs-target="#politicasModal" >Politicas de Privacidad</a></p>
+    <div>
+      <a href="https://www.facebook.com/UNPHU/?locale=es_LA" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+      <a href="https://www.instagram.com/unphu/?hl=es" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+      <a href="https://x.com/UNPHURD" class="text-white"><i class="bi bi-twitter-x"></i></a>
+    </div>
+  </footer>
+
+ 
+
+        <!-- Modal de Politicas de Privacidad -->
+<div class="modal fade" id="politicasModal" tabindex="-1" aria-labelledby="politicasModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header bg-primary text-white">
+        <h5 class="modal-title" id="politicasModalLabel">Politicas de Privacidad</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body">
+        <h6>1. Recoleccion de informacion</h6>
+        <p>GameValley recopila informacion basica de contacto a traves de formularios en el sitio web, unicamente con fines de comunicacion y mejora de la experiencia del usuario.</p>
+        <h6>2. Uso de la informacion</h6>
+        <p>La informacion proporcionada no sera compartida con terceros sin el consentimiento del usuario. Solo se utiliza para responder consultas o enviar actualizaciones relacionadas con el sitio.</p>
+        <h6>3. Cookies</h6>
+        <p>El sitio puede usar cookies para mejorar la navegacion y recordar preferencias del usuario. Puedes desactivarlas en cualquier momento desde tu navegador.</p>
+        <h6>4. Seguridad de los datos</h6>
+        <p>Implementamos medidas de seguridad para proteger la informacion de acceso no autorizado o uso indebido.</p>
+        <h6>5. Contacto</h6>
+        <p>Si tienes preguntas sobre nuestras politicas, contactanos al correo <a href="mailto:soporte@gamevalley.com">soporte@gamevalley.com</a>.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- Modal de Cartas -->
+
+
+    <div class="modal" tabindex="-1" role="dialog" id="modalJuego1">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Elden Ring: Nightreign</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <h3>Requisitos minimos</h3>
+          <p>SO: Windows 10</p>
+          <p>Procesador: Intel Core i5-10600 / AMD RYZEN 55500</p>
+          <p>Memoria: 12 GB de RAM</p>
+          <p>Graficos: NVIDIA GeForce GTX 1060 3GB / AMD Radeon RX 580 4GB</p>
+          <p>DirectX: Version 12</p>
+          <p>Almacenamiento: 30 GB de espacio disponible</p>
+          <p>Tarjeta de sonido: Windows compatible audio device</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+        <div class="modal" tabindex="-1" role="dialog" id="modalJuego2">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">RV There Yet?</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <h3>Requisitos minimos</h3>
+          <p>SO: Windows 10</p>
+          <p>Procesador: Core i7-3820 o equivalente</p>
+          <p>Memoria: 8 GB de RAM</p>
+          <p>Graficos: NVidia 970 o equivalente</p>
+          <p>DirectX: Version 11</p>
+          <p>Almacenamiento: 3 GB de espacio disponible</p>
+          <p>Tarjeta de sonido: Windows compatible audio device</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+            <div class="modal" tabindex="-1" role="dialog" id="modalJuego3">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Battlefield 6</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <h3>Requisitos minimos</h3>
+          <p>SO: Windows 10</p>
+          <p>Procesador: Intel Core i5-8400, AMD Ryzen 5 2600</p>
+          <p>Memoria: 16 GB de RAM</p>
+          <p>Graficos: Nvidia RTX 2060, AMD Radeon RX 5600 XT 6GB, Intel Arc A380</p>
+          <p>DirectX: Version 12</p>
+          <p>Almacenamiento: 55 GB de espacio disponible</p>
+          <p>Tarjeta de sonido: Windows compatible audio device</p>
+          <p>Notas adicionales: TPM 2.0 Enabled UEFI SECURE BOOT Enabled HVCI Capable VBS Capable</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+
+     <!-- Scripts -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+ <script src="js/java.js"></script>
+
+</body>
+</html>

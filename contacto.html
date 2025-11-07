@@ -1,0 +1,142 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sitio web con informacion de los juegos mas recientes a la fecha.">
+    <meta name="keywords" content="game, gamer, juegos, jugador, valley, gamevalley">
+    <meta name="author" content="Dariel">
+    <title>Game Valley</title>
+    <link rel="icon" href="imagenes/navbaricon.png" type="image/png">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Momo+Trust+Display&display=swap" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icon -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-danger">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="imagenes/navbaricon.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+                GameValley
+            </a>
+            <span class="navbar-brand mb-0 h1"></span>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html#">Pagina Principal</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="enlaces.html#">Enlaces</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="contacto.html#">Contactos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#politicasModal">Politicas de Privacidad</a>
+                    </li>
+                    <li>
+                        <button id="darkToggle" class="btn btn-light ms-3">Modo Oscuro</button>
+
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+
+
+
+
+    <!-- Header -->
+    <header class="text-center bg-danger text-dark py-4">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Contactos</h1>
+            <p class="lead">Formas en la que usted se puede comunicar con nosotros</p>
+        </div>
+    </header>
+
+    <!-- Main -->
+    <main class="container my-5">
+
+        <h1 class="text-dark text-center text-wrap fw-bold">Comuniquese a nuestro correo</h1>
+        <div class="d-flex justify-content-center mb-5" >
+            <a href="mailto:support@gamevalley.com" class="btn btn-warning">Enviar Correo</a>
+        </div>
+
+        <!-- Contenedor principal -->
+
+        <div id="contactoLogos" class="contacto-logo text-center flex-wrap justify-content-center gap-4 mb-3 mt-5">
+
+            <a href="https://www.facebook.com/UNPHU/?locale=es_LA" target="_blank" class="text-light fs-4">
+                <img class="img-fluid" src="imagenes/fblogo.png" alt="Facebook" />
+            </a>
+            <a href="https://x.com/UNPHURD" target="_blank" class="text-light fs-4">
+                <img class="img-fluid" src="imagenes/xlogo.png" alt="Twitter" />
+            </a>
+            <a href="https://www.instagram.com/unphu/?hl=es" target="_blank" class="text-light fs-4">
+                <img class="img-fluid" src="imagenes/iglogo.png" alt="Instagram" />
+            </a>
+            <a href="https://www.youtube.com/user/UNPHURD" target="_blank" class="text-light fs-4">
+                <img class="img-fluid" src="imagenes/ytlogo.png" alt="Youtube" />
+            </a>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <p class="mb-1">&copy; 2025 GameValley | <a href="politicasModal" class="text-white text-decoration-underline" data-bs-toggle="modal" data-bs-target="#politicasModal">Politicas de Privacidad</a></p>
+        <div>
+            <a href="https://www.facebook.com/UNPHU/?locale=es_LA" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/unphu/?hl=es" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+            <a href="https://x.com/UNPHURD" class="text-white"><i class="bi bi-twitter-x"></i></a>
+        </div>
+    </footer>
+
+
+
+    <!-- Modal de Politicas de Privacidad -->
+    <div class="modal fade" id="politicasModal" tabindex="-1" aria-labelledby="politicasModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title" id="politicasModalLabel">Politicas de Privacidad</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <h6>1. Recoleccion de informacion</h6>
+                    <p>GameValley recopila informacion basica de contacto a traves de formularios en el sitio web, unicamente con fines de comunicacion y mejora de la experiencia del usuario.</p>
+                    <h6>2. Uso de la informacion</h6>
+                    <p>La informacion proporcionada no sera compartida con terceros sin el consentimiento del usuario. Solo se utiliza para responder consultas o enviar actualizaciones relacionadas con el sitio.</p>
+                    <h6>3. Cookies</h6>
+                    <p>El sitio puede usar cookies para mejorar la navegacion y recordar preferencias del usuario. Puedes desactivarlas en cualquier momento desde tu navegador.</p>
+                    <h6>4. Seguridad de los datos</h6>
+                    <p>Implementamos medidas de seguridad para proteger la informacion de acceso no autorizado o uso indebido.</p>
+                    <h6>5. Contacto</h6>
+                    <p>Si tienes preguntas sobre nuestras politicas, contactanos al correo <a href="mailto:soporte@gamevalley.com">soporte@gamevalley.com</a>.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/java.js"></script>
+
+</body>
+</html>
