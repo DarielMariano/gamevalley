@@ -1,38 +1,5 @@
 
 
-.dark-mode {
-    background-color: #121212 !important;
-    color: #ffffff !important;
-}
-
-    .dark-mode .navbar {
-        background-color: #1f1f1f !important;
-    }
-
-    .dark-mode .card {
-        background-color: #1f1f1f;
-        color: #ffffff;
-        border-color: #ffffff;
-    }
-
-    .dark-mode .card-footer {
-        background-color: #2a2a2a;
-    }
-
-    .dark-mode footer {
-        background-color: #1f1f1f;
-    }
-
-    .dark-mode .navbar {
-        background-color: #1f1f1f !important;
-    }
-
-        .dark-mode .navbar .navbar-brand,
-        .dark-mode .navbar .nav-link {
-            color: #ffffff !important;
-        }
-
-
 
 @media (max-width: 768px) {
     .carousel-item img {
@@ -41,13 +8,18 @@
 }
 
 body {
-    background: linear-gradient(to top, #8b0000, #ff4d4d, #ffffff);
-    color: black;
     font-family: 'Momo Trust Display', sans-serif;
     padding: 20px;
-    background-color: #f8f9fa;
+    
 }
 
+  
+
+
+h1, h2, h3, h4, h5, h6, p, li, a {
+    color: inherit;
+    
+}
 
 
 
@@ -89,7 +61,9 @@ a {
 }
 
 header, footer {
-    transition: background 0.3s, color 0.3s;
+    background-color: var(--bs-body-bg);
+    color: var(--bs-body-color);
+    
 }
 
 .carousel-item img {
@@ -98,14 +72,14 @@ header, footer {
     min-height: 400px;
 }
 
-/* Ajustes para pantallas medianas */
+/* pantallas medianas */
 @media (max-width: 992px) {
     .carousel-item img {
         height: 50vh;
     }
 }
 
-/* Ajustes para pantallas pequeñas */
+/* pantallas pequeñas */
 @media (max-width: 768px) {
     .carousel-item img {
         height: 40vh;
@@ -113,7 +87,7 @@ header, footer {
     }
 }
 
-/* Ajustes para pantallas muy pequeñas */
+/* pantallas muy pequeñas */
 @media (max-width: 576px) {
     .carousel-item img {
         height: 30vh;
@@ -121,16 +95,7 @@ header, footer {
     }
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
 
-h1 {
-    text-align: center;
-    margin-bottom: 30px;
-    color: #333;
-}
 
 #contactoLogos img {
     max-width: 330px;
